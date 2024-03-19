@@ -19,7 +19,7 @@ body::before {
   right: 0;
   top: 0;
   height: 100vh;
-  background-image: url("../img/background/bg5.png");
+  background-image: url("../img/background/background.png");
 }
 
 @media (min-width: 1024px) {
