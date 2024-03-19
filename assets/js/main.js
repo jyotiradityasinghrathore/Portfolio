@@ -9,6 +9,13 @@
 
   // Nav Menu
   $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
+    var name = document.getElementById('home_name')
+    if (document.getElementById('js_home_class').classList.contains('active')) {
+      name.innerHTML = 'Jyotiraditya Singh Rathore'
+    } else { 
+      name.innerHTML = 'Jyotiraditya'
+    }
+
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var hash = this.hash;
       var target = $(hash);
@@ -47,6 +54,9 @@
 
       }
     }
+
+    
+
   });
 
   // Activate/show sections on load with hash links
@@ -61,6 +71,8 @@
         $(initial_nav).addClass('section-show');
       }, 350);
     }
+
+
   }
 
   // Mobile Navigation
@@ -146,6 +158,16 @@
   // Initiate venobox (lightbox feature used in portofilo)
   $(document).ready(function() {
     $('.venobox').venobox();
+  });
+
+
+  $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
+    var name = document.getElementById('home_name')
+    if (document.getElementById('js_home_class').classList.contains('active')) {
+      name.innerHTML = 'Jyotiraditya Singh Rathore'
+    } else { 
+      name.innerHTML = 'Jyotiraditya'
+    }
   });
 
 })(jQuery);

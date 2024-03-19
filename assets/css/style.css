@@ -13,10 +13,13 @@ body::before {
   position: fixed;
   background: #010e1b;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
+  background-image: url("../img/background/background.png");
 }
 
 @media (min-width: 1024px) {
@@ -43,6 +46,15 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.container {
+  background-color: #5452526c !important;
+  padding: 20px;
+}
+
+.maps {
+  width: 100%;
+}
+
 #header {
   transition: ease-in-out 0s;
   position: relative;
@@ -110,6 +122,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .social-links a:hover {
   background: #1c7d32;
+  transform: scale(1.5);
+  transition: 0.2s;
+  transition: ease-in-out 0.3s;
 }
 
 @media (max-width: 992px) {
@@ -271,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: #09203a;
+  background: #57505002;
 }
 
 #header.header-top .social-links, #header.header-top h2 {
@@ -478,7 +493,6 @@ section .container {
   align-items: center;
   padding: 20px;
   background: #09203a;
-  transition: ease-in-out 0.3s;
 }
 
 
@@ -499,6 +513,8 @@ section .container {
 
 .interests .icon-box:hover {
   background: #042b56eb;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 /*--------------------------------------------------------------
@@ -707,6 +723,8 @@ section .container {
 .services .icon-box:hover {
   background: #042e5f;
   border-color: #1c7d32;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .services .icon-box:hover .icon {
@@ -906,6 +924,7 @@ section .container {
   color: #28a745;
   font-weight: 700;
   margin: 10px 0 8px 68px;
+  
 }
 
 .contact .info-box p {
@@ -932,6 +951,15 @@ section .container {
 
 .contact .info-box .social-links a:hover {
   color: #12d640;
+  transform: scale(1.5);
+  transition: 0.2s;
+  transition: ease-in-out 0.3s;
+}
+
+.contact .info-box:hover{
+  background: #042b56eb;
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .contact .php-email-form {
