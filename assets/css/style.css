@@ -11,16 +11,25 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #010e1b;
+  /* background: #a987bcd5 !important; */
+  background-color: #a987bcd5;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
-  background-image: url("../img/background/Background.jpg");
 }
+
+#portfolio-details .container {
+  background-color: transparent;
+}
+
+.body-with-background::before {
+  
+  background-image: url("../img/background/bg.jpg");
+}
+
 
 @media (min-width: 1024px) {
   body::before {
@@ -29,11 +38,12 @@ body::before {
 }
 
 a {
-  color: #12d640;
+  color: #040030;
+
 }
 
 a:hover {
-  color: #12d640;
+  color: #040030;
   text-decoration: none;
 }
 
@@ -47,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 .container {
-  background-color: #5452526c !important;
+  background-color: #a987bcd5;
   padding: 20px;
 }
 
@@ -87,12 +97,12 @@ h1, h2, h3, h4, h5, h6 {
 #header h2 {
   font-size: 24px;
   margin-top: 20px;
-  color: #12d640;
+  color: #040030;
 }
 
 #header h2 span {
   color: #ffc107;
-  border-bottom: 2px solid #1c7d32;
+  border-bottom: 2px solid #040030;
   padding-bottom: 6px;
 }
 
@@ -121,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .social-links a:hover {
-  background: #1c7d32;
+  background: #040030;
   transform: scale(1.5);
   transition: 0.2s;
   transition: ease-in-out 0.3s;
@@ -180,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #9e7f25;
+  background-color: #040030;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -192,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #12d640;
+  color: #040030;
   text-decoration: none;
 }
 
@@ -337,7 +347,7 @@ section.section-show {
 }
 
 section .container {
-  background: rgba(0, 0, 0, 0);
+  /* background: rgba(0, 0, 0, 0); */
   padding: 30px;
 }
 
@@ -492,7 +502,7 @@ section .container {
   display: flex;
   align-items: center;
   padding: 20px;
-  background: #09203a;
+  background: #723d64c9;
 }
 
 
@@ -512,7 +522,7 @@ section .container {
 }
 
 .interests .icon-box:hover {
-  background: #042b56eb;
+  background: #773264;
   transform: scale(1.1);
   transition: 0.3s;
 }
@@ -666,7 +676,7 @@ section .container {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  background: #09203a;
+  background: #723d64c9;
   padding: 40px 40px;
   transition: all ease-in-out 0.3s;
   margin: 10px
@@ -721,7 +731,7 @@ section .container {
 }
 
 .services .icon-box:hover {
-  background: #042e5f;
+  background: #773264;
   border-color: #1c7d32;
   transform: scale(1.1);
   transition: 0.3s;
@@ -740,7 +750,7 @@ section .container {
 }
 
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
-  color: #12d640;
+  color: #040030;
 }
 
 /*--------------------------------------------------------------
@@ -907,7 +917,7 @@ section .container {
   color: #444444;
   padding: 20px;
   width: 100%;
-  background: #09203a;
+  background: #723d64c9;
 }
 
 .contact .info-box i.bx {
@@ -921,7 +931,7 @@ section .container {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #28a745;
+  color: #040030;
   font-weight: 700;
   margin: 10px 0 8px 68px;
   
@@ -950,14 +960,14 @@ section .container {
 }
 
 .contact .info-box .social-links a:hover {
-  color: #12d640;
+  color: #040030;
   transform: scale(1.5);
   transition: 0.2s;
   transition: ease-in-out 0.3s;
 }
 
 .contact .info-box:hover{
-  background: #042b56eb;
+  background: #773264;
   transform: scale(1.1);
   transition: 0.2s;
 }
